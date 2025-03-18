@@ -1,0 +1,134 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Proyectos - GitHub Pages</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 2rem 1rem;
+            text-align: center;
+            background: #2d2d2d;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        h1 {
+            color: #4CAF50;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .project-card {
+            background: #333;
+            padding: 1.5rem;
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-title {
+            color: #4CAF50;
+            margin-bottom: 1rem;
+        }
+
+        .project-description {
+            margin-bottom: 1rem;
+        }
+
+        .project-tech {
+            color: #888;
+            margin-bottom: 1rem;
+        }
+
+        .project-link {
+            color: #4CAF50;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 0.5rem;
+        }
+
+        .project-link:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #2d2d2d;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Mis Proyectos</h1>
+            <p>Portfolio personal alojado en GitHub Pages</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="project-grid">
+            <!-- Proyecto 1 -->
+            <div class="project-card">
+                <h2 class="project-title">Proyecto 1</h2>
+                <p class="project-description">Descripción breve del proyecto. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="project-tech"><i class="fas fa-code"></i> HTML, CSS, JavaScript</p>
+                <a href="#" class="project-link" target="_blank"><i class="fab fa-github"></i> Ver código</a>
+            </div>
+
+            <!-- Proyecto 2 -->
+            <div class="project-card">
+                <h2 class="project-title">Proyecto 2</h2>
+                <p class="project-description">Descripción breve del proyecto. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="project-tech"><i class="fas fa-code"></i> React, Node.js</p>
+                <a href="#" class="project-link" target="_blank"><i class="fab fa-github"></i> Ver código</a>
+            </div>
+
+            <!-- Proyecto 3 -->
+            <div class="project-card">
+                <h2 class="project-title">Proyecto 3</h2>
+                <p class="project-description">Descripción breve del proyecto. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="project-tech"><i class="fas fa-code"></i> Python, Django</p>
+                <a href="#" class="project-link" target="_blank"><i class="fab fa-github"></i> Ver código</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Tu Nombre | <a href="https://github.com/tu-usuario" target="_blank">GitHub</a></p>
+    </footer>
+</body>
+</html>
+```
